@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact and Social Links</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Navigation Header -->
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#dbe0e6] dark:border-[#2d3a4b] px-6 lg:px-40 py-4 bg-white dark:bg-background-dark">
+                <div class="flex items-center gap-4 text-[#111418] dark:text-white">
+                    <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined text-xl">person_pin</span>
+                    </div>
+                    <h2 class="text-lg font-bold leading-tight tracking-tight">Fiqkri Putra Riswanda Portfolio</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-[#111418] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors"
+                            href="#">Home</a>
+                        <a class="text-[#111418] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors"
+                            href="#">About</a>
+                        <a class="text-[#111418] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors"
+                            href="#">Projects</a>
+                        <a class="text-[#111418] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors"
+                            href="#">CV</a>
+                        <a class="text-primary dark:text-primary text-sm font-bold border-b-2 border-primary"
+                            href="#">Contact</a>
+                    </nav>
+                    <button
+                        class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold leading-normal transition-opacity hover:opacity-90">
+                        Hire Me
+                    </button>
+                </div>
+            </header>
+            <main class="px-6 lg:px-40 py-12 lg:py-20 flex-1">
+                <div class="max-w-[1200px] mx-auto">
+                    <!-- Title Section -->
+                    <div class="mb-12">
+                        <h1 class="text-[#111418] dark:text-white text-4xl lg:text-5xl font-black tracking-tight mb-4">
+                            Get in Touch</h1>
+                        <p class="text-[#617589] dark:text-[#94a3b8] text-lg max-w-2xl">
+                            Have a project in mind, a professional opportunity, or just want to say hi? I'd love to hear
+                            from you.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                        <!-- Contact Form Section -->
+                        <div
+                            class="lg:col-span-7 bg-white dark:bg-[#1a2633] p-8 rounded-xl shadow-sm border border-[#dbe0e6] dark:border-[#2d3a4b]">
+                            <form action="#" class="flex flex-col gap-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="flex flex-col gap-2">
+                                        <label class="text-[#111418] dark:text-white text-sm font-semibold">Name</label>
+                                        <input
+                                            class="w-full rounded-lg border border-[#dbe0e6] dark:border-[#2d3a4b] bg-white dark:bg-background-dark p-3.5 text-[#111418] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-[#617589]"
+                                            placeholder="Your full name" type="text" />
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <label
+                                            class="text-[#111418] dark:text-white text-sm font-semibold">Email</label>
+                                        <input
+                                            class="w-full rounded-lg border border-[#dbe0e6] dark:border-[#2d3a4b] bg-white dark:bg-background-dark p-3.5 text-[#111418] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-[#617589]"
+                                            placeholder="yourname@email.com" type="email" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label class="text-[#111418] dark:text-white text-sm font-semibold">Subject</label>
+                                    <input
+                                        class="w-full rounded-lg border border-[#dbe0e6] dark:border-[#2d3a4b] bg-white dark:bg-background-dark p-3.5 text-[#111418] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-[#617589]"
+                                        placeholder="How can I help you?" type="text" />
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label class="text-[#111418] dark:text-white text-sm font-semibold">Message</label>
+                                    <textarea
+                                        class="w-full rounded-lg border border-[#dbe0e6] dark:border-[#2d3a4b] bg-white dark:bg-background-dark p-3.5 text-[#111418] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-[#617589] resize-none"
+                                        placeholder="Tell me more about your inquiry..." rows="6"></textarea>
+                                </div>
+                                <button
+                                    class="w-full md:w-max px-8 py-4 bg-primary text-white font-bold rounded-lg shadow-lg hover:shadow-primary/20 hover:bg-primary/90 transition-all flex items-center justify-center gap-2"
+                                    type="submit">
+                                    <span>Send Message</span>
+                                    <span class="material-symbols-outlined text-sm">send</span>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- Info Sidebar -->
+                        <div class="lg:col-span-5 flex flex-col gap-10">
+                            <!-- Contact Cards -->
+                            <div class="flex flex-col gap-6">
+                                <h3 class="text-xl font-bold text-[#111418] dark:text-white">Contact Information</h3>
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                                        <span class="material-symbols-outlined">mail</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-semibold text-[#111418] dark:text-white">Email</p>
+                                        <a class="text-[#617589] dark:text-[#94a3b8] hover:text-primary transition-colors"
+                                            href="mailto:hello@johndoe.com">hello@johndoe.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                                        <span class="material-symbols-outlined">call</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-semibold text-[#111418] dark:text-white">Phone</p>
+                                        <a class="text-[#617589] dark:text-[#94a3b8] hover:text-primary transition-colors"
+                                            href="tel:+1234567890">+1 (234) 567-890</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                                        <span class="material-symbols-outlined">location_on</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-semibold text-[#111418] dark:text-white">Location</p>
+                                        <p class="text-[#617589] dark:text-[#94a3b8]">San Francisco, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Social Links -->
+                            <div class="flex flex-col gap-6">
+                                <h3 class="text-xl font-bold text-[#111418] dark:text-white">Connect with me</h3>
+                                <div class="flex flex-wrap gap-4">
+                                    <a class="group size-12 rounded-full border border-[#dbe0e6] dark:border-[#2d3a4b] flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300"
+                                        href="#">
+                                        <span
+                                            class="material-symbols-outlined text-[#111418] dark:text-white group-hover:text-white">share</span>
+                                    </a>
+                                    <a class="group size-12 rounded-full border border-[#dbe0e6] dark:border-[#2d3a4b] flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300"
+                                        href="#">
+                                        <span
+                                            class="material-symbols-outlined text-[#111418] dark:text-white group-hover:text-white">code</span>
+                                    </a>
+                                    <a class="group size-12 rounded-full border border-[#dbe0e6] dark:border-[#2d3a4b] flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300"
+                                        href="#">
+                                        <span
+                                            class="material-symbols-outlined text-[#111418] dark:text-white group-hover:text-white">groups</span>
+                                    </a>
+                                    <a class="group size-12 rounded-full border border-[#dbe0e6] dark:border-[#2d3a4b] flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300"
+                                        href="#">
+                                        <span
+                                            class="material-symbols-outlined text-[#111418] dark:text-white group-hover:text-white">public</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Resume Preview/Download -->
+                            <div class="mt-4 p-6 bg-primary/5 rounded-xl border border-primary/20">
+                                <p class="text-[#111418] dark:text-white font-bold mb-2">Looking for my CV?</p>
+                                <p class="text-[#617589] dark:text-[#94a3b8] text-sm mb-4">Download my complete resume
+                                    as a PDF for offline viewing.</p>
+                                <button class="flex items-center gap-2 text-primary font-bold text-sm hover:underline">
+                                    <span class="material-symbols-outlined text-lg">download</span>
+                                    Download CV
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Map Placeholder -->
+            <div
+                class="w-full h-80 bg-[#f0f2f4] dark:bg-[#1a2633] overflow-hidden relative border-t border-[#dbe0e6] dark:border-[#2d3a4b]">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center">
+                        <span class="material-symbols-outlined text-primary text-5xl mb-2">map</span>
+                        <p class="text-[#617589] dark:text-[#94a3b8] font-medium">Interactive Map View</p>
+                    </div>
+                </div>
+                <img alt="Map showing location"
+                    class="w-full h-full object-cover opacity-30 grayscale pointer-events-none"
+                    data-alt="Abstract minimal map visualization showing location" data-location="San Francisco"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAod0C5I-ryufxzQN6BF9niQplAlFsHlfDp1P4ey2OeNW69XR3qNQCvRwRI9RUCyHIsv8dt08sFSbT5pMHtCbWQdLnG6mDdfdg_EG7ot4IFv30xDYgGlgEQFakxOUuYji9MOSATRFclciuUXSIg7XRrIi_HOCYbygGQ7tPjeNUVbi9zNlqJp4qsO-rubeiqWxXSahDkQBGOsuBq4ULS5YNqLhWMddrSX1zHdYKHvLvjgidrAcUK8xE3H6CRP36kvbeKp9tI9qp7ARs" />
+            </div>
+            <footer
+                class="px-6 lg:px-40 py-8 border-t border-[#dbe0e6] dark:border-[#2d3a4b] bg-white dark:bg-background-dark">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-[#617589] dark:text-[#94a3b8] text-sm">© 2024 John Doe. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="text-sm text-[#617589] dark:text-[#94a3b8] hover:text-primary" href="#">Privacy
+                            Policy</a>
+                        <a class="text-sm text-[#617589] dark:text-[#94a3b8] hover:text-primary" href="#">Terms of
+                            Service</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
