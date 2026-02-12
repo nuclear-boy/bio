@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { BookOpen, Briefcase, Award, GraduationCap, Code, Globe, User } from 'lucide-react'
+import { BookOpen, Briefcase, Award, GraduationCap, Code, Globe, User, Download } from 'lucide-react'
 import { cvConfig } from '../data/cvConfig'
 
 const Biodata = () => {
@@ -27,6 +27,27 @@ const Biodata = () => {
                         <p style={{ color: 'var(--text-dim)', fontSize: '0.95rem', marginBottom: '32px' }}>
                             {cvConfig.profile.bioLong}
                         </p>
+
+                        <div style={{ marginBottom: '40px' }}>
+                            <a
+                                href={cvConfig.profile.cvPath}
+                                download="CV_Fiqkri_Putra_Riswanda.pdf"
+                                className="glass-card"
+                                style={{
+                                    padding: '12px 24px',
+                                    color: 'var(--primary)',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '10px',
+                                    textDecoration: 'none',
+                                    fontSize: '0.9rem',
+                                    border: '1px solid var(--primary)',
+                                    borderRadius: '8px'
+                                }}
+                            >
+                                <Download size={16} /> DOWNLOAD_FULL_CV.pdf
+                            </a>
+                        </div>
 
                         <h4 className="mono" style={{ fontSize: '0.7rem', color: 'var(--primary)', marginBottom: '20px', letterSpacing: '0.2em' }}>SKILL_MATRIX</h4>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>

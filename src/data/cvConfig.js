@@ -7,6 +7,8 @@
  * Semua teks, pautan, dan URL imej dikumpulkan di sini untuk memudahkan pengurusannya.
  */
 
+import cvFile from './CV Pribadi.pdf'
+
 export const cvConfig = {
     // --- BASIC INFORMATION ---
     profile: {
@@ -21,6 +23,7 @@ export const cvConfig = {
         bioShort: "I am a Undergraduate Physics Student specializing in Physics Instrumentation and Computational Physics for Simulation.",
         bioLong: "Specialized in the convergence of human cognition and digital systems. My work focuses on creating seamless bridges between complex backend data and intuitive human interaction.",
         profileImage: "/src/dokumentasi/foto1.webp",
+        cvPath: cvFile,
     },
 
     // --- SOCIAL LINKS ---

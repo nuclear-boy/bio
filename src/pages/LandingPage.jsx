@@ -33,9 +33,14 @@ const LandingPage = () => {
                             <button className="glow-btn" style={{ padding: '16px 32px', display: 'flex', alignItems: 'center', gap: '10px' }}>
                                 Initialize Project <LucideIcons.ArrowRight size={18} />
                             </button>
-                            <button className="glass-card" style={{ padding: '16px 32px', color: '#fff', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <a
+                                href={cvConfig.profile.cvPath}
+                                download="CV_Fiqkri_Putra_Riswanda.pdf"
+                                className="glass-card"
+                                style={{ padding: '16px 32px', color: '#fff', display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}
+                            >
                                 <LucideIcons.Download size={18} /> Fetch CV.pdf
-                            </button>
+                            </a>
                         </div>
                     </motion.div>
                 </div>
