@@ -7,7 +7,10 @@
  * Semua teks, pautan, dan URL imej dikumpulkan di sini untuk memudahkan pengurusannya.
  */
 
-import cvFile from './CV Pribadi.pdf'
+import cvFile from './cv_pribadi.pdf'
+import profileImage from '../dokumentasi/foto1.webp'
+import theoImage from '../dokumentasi/theo.webp'
+import webImage from '../dokumentasi/web.webp'
 
 export const cvConfig = {
     // --- BASIC INFORMATION ---
@@ -22,7 +25,7 @@ export const cvConfig = {
         location: "Pontianak, West Borneo",
         bioShort: "I am a Undergraduate Physics Student specializing in Physics Instrumentation and Computational Physics for Simulation.",
         bioLong: "Specialized in the convergence of human cognition and digital systems. My work focuses on creating seamless bridges between complex backend data and intuitive human interaction.",
-        profileImage: "/src/dokumentasi/foto1.webp",
+        profileImage: profileImage,
         cvPath: cvFile,
     },
 
@@ -93,7 +96,7 @@ export const cvConfig = {
             category: 'Instrumentation',
             desc: 'Inspired by the conventional theodolite used for measuring building heights, this device operates by converting ADC values from a potentiometer into angular measurements.',
             tech: ['Microcontroller', 'C++'],
-            image: '/src/dokumentasi/theo.webp',
+            image: theoImage,
             links: { github: 'https://github.com/nuclear-boy/mini-theodolite-arduino-with-potensiometer' }
         },
         {
@@ -101,7 +104,7 @@ export const cvConfig = {
             category: 'Website',
             desc: 'Developed a website for Pelajar Islam Indonesia using React.JS',
             tech: ['HTML', 'CSS', 'React.JS'],
-            image: '/src/dokumentasi/web.webp',
+            image: webImage,
             links: { live: 'https://nuclear-boy.github.io/pwpii-kalbar' }
         },
     ],
