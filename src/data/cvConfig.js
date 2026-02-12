@@ -24,52 +24,52 @@ export const cvConfig = {
         phone: "+6285652239017",
         location: "Pontianak, West Borneo",
         bioShort: "I am a Undergraduate Physics Student specializing in Physics Instrumentation and Computational Physics for Simulation.",
-        bioLong: "Specialized in the convergence of human cognition and digital systems. My work focuses on creating seamless bridges between complex backend data and intuitive human interaction.",
+        bioLong: "Focused on integrated digital systems and physics-based computation. I specialize in bridging the gap between hardware instrumentation and software-driven data analysis, ensuring high-fidelity results for complex simulations and real-world experiments.",
         profileImage: profileImage,
         cvPath: cvFile,
     },
 
     // --- SOCIAL LINKS ---
     social: {
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
+        github: "https://github.com/nuclear-boy",
+        linkedin: "https://linkedin.com/in/fiqkri-putra-riswanda",
+        instagram: "https://instagram.com/_fqkriptra_",
         terminal: "#", // Link to custom terminal/console if any
     },
 
     // --- LANDING PAGE STATS ---
     stats: [
-        { label: 'LEADERSHIP', value: '10', color: 'var(--primary)', icon: 'Rocket' },
-        { label: 'PHYSICS INSTRUMENTATION', value: '2', color: 'var(--secondary)', icon: 'Globe' },
-        { label: 'DATA SCIENCE', value: '2', color: '#ff0080', icon: 'Award' }
+        { label: 'LEADERSHIP', value: '10+', color: 'var(--primary)', icon: 'Rocket' },
+        { label: 'INSTRUMENTATION', value: '5+', color: 'var(--secondary)', icon: 'Globe' },
+        { label: 'DATA PROJECTS', value: '15+', color: '#ff0080', icon: 'Award' }
     ],
 
     // --- CORE FRAMEWORKS / EXPERTISE ---
     expertise: [
-        { title: 'Neural Systems', desc: 'Developing intuitive interfaces that adapt to user cognitive patterns.', icon: 'Cpu' },
-        { title: 'Physics Instrumentation', desc: 'Architecting edge-heavy applications with zero-latency synchronization.', icon: 'Globe' },
-        { title: 'Machine Learning', desc: 'Transforming telemetry data into actionable executive insights.', icon: 'Target' }
+        { title: 'Computational Physics', desc: 'Developing numerical models and simulations to solve complex physical phenomena.', icon: 'Cpu' },
+        { title: 'Instrumentation', desc: 'Designing and calibrating hardware interfaces for precise data acquisition.', icon: 'Globe' },
+        { title: 'Data Analytics', desc: 'Extracting meaningful insights from experimental telemetry using Python and R.', icon: 'Target' }
     ],
 
     // --- BIODATA / EXPERIENCE ---
     experiences: [
         {
             year: '2025 — PRESENT',
-            role: 'Research and Digitalization Architecture',
+            role: 'Research and Digitalization',
             company: 'Pelajar Islam Indonesia',
-            desc: 'Orchestrating large-scale distributed systems and neural interface protocols for Fortune 500 clients.'
+            desc: 'Leading digital transformation initiatives and architectural research to optimize organizational systems.'
         },
         {
             year: '2024 - 2025',
             role: 'Chairman',
             company: 'Pelajar Islam Indonesia Tanjungpura University',
-            desc: 'Pioneered adaptive UI architectures using real-time telemetry and predictive modeling.'
+            desc: 'Pioneered adaptive organizational structures and managed large-scale digital coordination.'
         },
         {
             year: '2024 — 2025',
             role: 'Chairman',
-            company: 'Lembaga Dakwah Fakultas FMIPA Tanjungpura University',
-            desc: 'Developed high-security command interfaces for critical infrastructure management.'
+            company: 'Lembaga Dakwah Fakultas FMIPA Untan',
+            desc: 'Developed high-efficiency communication protocols and managed data-driven member tracking.'
         }
     ],
 

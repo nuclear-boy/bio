@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import * as LucideIcons from 'lucide-react'
 import { cvConfig } from '../data/cvConfig'
@@ -30,9 +31,9 @@ const LandingPage = () => {
                         </p>
 
                         <div style={{ display: 'flex', gap: '20px' }}>
-                            <button className="glow-btn" style={{ padding: '16px 32px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <Link to="/contact" className="glow-btn" style={{ padding: '16px 32px', display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
                                 Initialize Project <LucideIcons.ArrowRight size={18} />
-                            </button>
+                            </Link>
                             <a
                                 href={cvConfig.profile.cvPath}
                                 download="CV_Fiqkri_Putra_Riswanda.pdf"

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from 'lucide-react'
+import { Github, Linkedin, Instagram } from 'lucide-react'
 import { cvConfig } from '../data/cvConfig'
 
 const Footer = () => (
@@ -11,7 +11,7 @@ const Footer = () => (
             <div style={{ display: 'flex', gap: '20px' }}>
                 <a href={cvConfig.social.github} target="_blank" rel="noopener noreferrer"><Github size={20} /></a>
                 <a href={cvConfig.social.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
-                <a href={cvConfig.social.twitter} target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>
+                <a href={cvConfig.social.instagram} target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
             </div>
         </div>
     </footer>

@@ -1,8 +1,26 @@
 import { motion } from 'framer-motion'
-import { Send, Mail, Phone, MapPin, Share2, Terminal, Code, Cpu } from 'lucide-react'
+import { Send, Mail, Phone, MapPin, Terminal, Code, Cpu, Instagram, Github, Linkedin } from 'lucide-react'
 import { cvConfig } from '../data/cvConfig'
+import { useState } from 'react'
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    })
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const mailtoUrl = `mailto:${cvConfig.profile.email}?subject=${encodeURIComponent(formData.subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`
+        window.location.href = mailtoUrl
+    }
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value })
+    }
+
     return (
         <div className="container" style={{ paddingBottom: '100px' }}>
             <header style={{ marginBottom: '60px' }}>
@@ -24,13 +42,17 @@ const Contact = () => {
                         <Terminal size={14} /> &gt; START_COMMUNICATION_SEQUENCE
                     </div>
 
-                    <form style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                 <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--text-dim)' }}>IDENTIFIER_NAME</label>
                                 <input
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
                                     type="text"
                                     placeholder="e.g. Dr. John Doe"
+                                    required
                                     style={{
                                         background: 'rgba(255,255,255,0.03)',
                                         border: '1px solid var(--border)',
@@ -44,8 +66,12 @@ const Contact = () => {
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                 <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--text-dim)' }}>RETURN_PATH_EMAIL</label>
                                 <input
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     type="email"
                                     placeholder="subject@institution.com"
+                                    required
                                     style={{
                                         background: 'rgba(255,255,255,0.03)',
                                         border: '1px solid var(--border)',
@@ -61,6 +87,9 @@ const Contact = () => {
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                             <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--text-dim)' }}>SUBJECT_HEADER</label>
                             <input
+                                name="subject"
+                                value={formData.subject}
+                                onChange={handleChange}
                                 type="text"
                                 placeholder="Collaboration Inquiry / Technical Audit"
                                 style={{
@@ -77,8 +106,12 @@ const Contact = () => {
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                             <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--text-dim)' }}>TRANSMISSION_BODY</label>
                             <textarea
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
                                 rows="6"
                                 placeholder="Describe the nature of your request..."
+                                required
                                 style={{
                                     background: 'rgba(255,255,255,0.03)',
                                     border: '1px solid var(--border)',
@@ -91,7 +124,7 @@ const Contact = () => {
                             />
                         </div>
 
-                        <button className="glow-btn" style={{ padding: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+                        <button type="submit" className="glow-btn" style={{ padding: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
                             SEND TRANSMISSION <Send size={18} />
                         </button>
                     </form>
@@ -135,9 +168,9 @@ const Contact = () => {
                     <div className="glass-card" style={{ padding: '30px' }}>
                         <h4 className="mono" style={{ fontSize: '0.7rem', color: 'var(--secondary)', marginBottom: '24px' }}>SYNCHRONIZE_ACCOUNTS</h4>
                         <div style={{ display: 'flex', gap: '16px' }}>
-                            <a href={cvConfig.social.github} className="glass-btn-circle"><Terminal size={20} /></a>
-                            <a href={cvConfig.social.linkedin} className="glass-btn-circle"><Code size={20} /></a>
-                            <a href={cvConfig.social.twitter} className="glass-btn-circle"><Cpu size={20} /></a>
+                            <a href={cvConfig.social.github} target="_blank" rel="noopener noreferrer" className="glass-btn-circle"><Github size={20} /></a>
+                            <a href={cvConfig.social.linkedin} target="_blank" rel="noopener noreferrer" className="glass-btn-circle"><Linkedin size={20} /></a>
+                            <a href={cvConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="glass-btn-circle"><Instagram size={20} /></a>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { Terminal, User, Briefcase, Star } from 'lucide-react'
+import { cvConfig } from '../data/cvConfig'
 
 const Navbar = () => {
     const location = useLocation();
@@ -29,9 +30,9 @@ const Navbar = () => {
             <Link to="/testimonials" className={`mono ${location.pathname === '/testimonials' ? 'text-gradient font-bold' : ''}`} style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Star size={16} /> REVIEWS
             </Link>
-            <Link to="/contact" className="glow-btn" style={{ padding: '6px 16px', fontSize: '0.7rem' }}>
+            <a href={`mailto:${cvConfig.profile.email}?subject=Project Consultation Request`} className="glow-btn" style={{ padding: '6px 16px', fontSize: '0.7rem', textDecoration: 'none' }}>
                 PING
-            </Link>
+            </a>
         </nav>
     )
 }
