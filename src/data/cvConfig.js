@@ -63,13 +63,13 @@ export const cvConfig = {
             year: '2024 - 2025',
             role: 'Chairman',
             company: 'Pelajar Islam Indonesia Tanjungpura University',
-            desc: 'Pioneered adaptive organizational structures and managed large-scale digital coordination.'
+            desc: 'Orchestrated strategic student development programs based on Islamic leadership principles, fostering an adaptive culture of critical thinking and brotherhood (Ukhuwah) across diverse faculties.'
         },
         {
             year: '2024 — 2025',
             role: 'Chairman',
             company: 'Lembaga Dakwah Fakultas FMIPA Untan',
-            desc: 'Developed high-efficiency communication protocols and managed data-driven member tracking.'
+            desc: 'Spearheaded faculty-wide Islamic mentorship initiatives by establishing robust communication protocols to monitor member spiritual growth and optimize student engagement.'
         }
     ],
 
