@@ -7,11 +7,17 @@
     <title>Redirecting...</title>
     <script>
         // Redirect to index.html with hash for HashRouter
-        const path = window.location.pathname.slice(1);
-        if (path) {
-            window.location.replace('/main/#/' + path);
+        const path = window.location.pathname;
+        const repo = '/bio/';
+        if (path.startsWith(repo)) {
+            const subPath = path.replace(repo, '');
+            if (subPath) {
+                window.location.replace(repo + '#/' + subPath);
+            } else {
+                window.location.replace(repo);
+            }
         } else {
-            window.location.replace('/main/');
+            window.location.replace(repo);
         }
     </script>
 </head>
