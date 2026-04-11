@@ -141,7 +141,7 @@ export const cvConfig = {
             content: 'Transformative. The systems designed by Fiqkri didn’t just meet requirements; they redefined how we visualize complex data streams.',
             impact: 'Personal Branding Breakthrough',
             rating: 5,
-            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5oXRDNxkPGgYe3F9oQmXE86pcsMck1wlpPpaiuxarz0JFRLJVDc5ta4Fz1hjKvweHUpPP9OYdDab1iU0pRoUkzEAGi9pEMwBXA56wy7ULF5GVvsz3YWWUUrkfsWEOQZoSy5iOnjcmr-2feBDv8VsfGbm3hfYR_e6BnTMqWI4udxEzAvr7zPsZwZKP70cLTEk8hW-3CL88VjvD6kyaLs1dFZEqYWNZKiovOBClG2voS11qnebDT4THraLIZsi7jJRRpqs94sPegsE'
+            image: ''
         },
         {
             name: 'Diaz Ataya',
