@@ -30,7 +30,7 @@ const Contact = () => {
                 <p className="mono" style={{ color: 'var(--text-dim)', fontSize: '0.9rem' }}>CHANNEL: SECURE_SHELL | PROTOCOL: TCP/IP</p>
             </header>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '60px' }}>
+            <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '60px' }}>
                 {/* Form */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
@@ -43,7 +43,7 @@ const Contact = () => {
                     </div>
 
                     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+                        <div className="mobile-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                 <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--text-dim)' }}>IDENTIFIER_NAME</label>
                                 <input
@@ -113,11 +113,11 @@ const Contact = () => {
                                 placeholder="Describe the nature of your request..."
                                 required
                                 style={{
-                                    background: 'rgba(255,255,255,0.03)',
+                                    background: 'rgba(0,0,0,0.02)',
                                     border: '1px solid var(--border)',
                                     padding: '16px',
-                                    borderRadius: '8px',
-                                    color: '#fff',
+                                    borderRadius: '12px',
+                                    color: 'var(--text-main)',
                                     outline: 'none',
                                     resize: 'none'
                                 }}

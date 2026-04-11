@@ -60,7 +60,7 @@ const Testimoni = () => {
             {/* Trust Signifiers */}
             <section style={{ marginTop: '100px', textAlign: 'center' }}>
                 <p className="mono" style={{ color: 'var(--text-dim)', fontSize: '0.7rem', marginBottom: '40px', letterSpacing: '0.3em' }}>RECOGNIZED_BY_INDUSTRY_LEADERS</p>
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '80px', opacity: 0.3, filter: 'grayscale(1) invert(1)' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '80px', opacity: 0.3, filter: 'grayscale(1)' }}>
                     {cvConfig.trustLogos.map((logo, i) => (
                         <img key={i} className="h-8 md:h-10" src={logo} style={{ height: '40px' }} />
                     ))}

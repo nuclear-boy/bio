@@ -19,16 +19,16 @@ const Navbar = () => {
             alignItems: 'center'
         }}>
             <Link to="/" className={`mono ${location.pathname === '/' ? 'text-gradient font-bold' : ''}`} style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Terminal size={16} /> HOME
+                <Terminal size={16} /> <span>HOME</span>
             </Link>
             <Link to="/about" className={`mono ${location.pathname === '/about' ? 'text-gradient font-bold' : ''}`} style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <User size={16} /> ABOUT
+                <User size={16} /> <span>ABOUT</span>
             </Link>
             <Link to="/portfolio" className={`mono ${location.pathname === '/portfolio' ? 'text-gradient font-bold' : ''}`} style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Briefcase size={16} /> PROJECTS
+                <Briefcase size={16} /> <span>PROJECTS</span>
             </Link>
             <Link to="/testimonials" className={`mono ${location.pathname === '/testimonials' ? 'text-gradient font-bold' : ''}`} style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Star size={16} /> REVIEWS
+                <Star size={16} /> <span>REVIEWS</span>
             </Link>
             <a href={`mailto:${cvConfig.profile.email}?subject=Project Consultation Request`} className="glow-btn" style={{ padding: '6px 16px', fontSize: '0.7rem', textDecoration: 'none' }}>
                 PING

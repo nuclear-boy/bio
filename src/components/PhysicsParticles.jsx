@@ -9,7 +9,8 @@ const PhysicsParticles = () => {
         let animationFrameId;
 
         // Configuration
-        const particleCount = 25; // Slightly more particles
+        const isMobile = window.innerWidth < 768;
+        const particleCount = isMobile ? 12 : 25;
         const equations = [
             "iħ∂Ψ/∂t = ĤΨ",       // Schrodinger
             "E = mc²",            // Relativity
@@ -39,8 +40,8 @@ const PhysicsParticles = () => {
                     x: (Math.random() - 0.5) * 0.7, // Speed
                     y: (Math.random() - 0.5) * 0.7  // Speed
                 };
-                this.size = Math.random() * 14 + 10; // Font size 10-24px
-                this.opacity = Math.random() * 0.4 + 0.05; // 0.05 to 0.45 opacity
+                this.size = isMobile ? (Math.random() * 10 + 8) : (Math.random() * 14 + 10);
+                this.opacity = isMobile ? (Math.random() * 0.15 + 0.05) : (Math.random() * 0.4 + 0.05);
             }
 
             update() {
@@ -56,7 +57,7 @@ const PhysicsParticles = () => {
 
             draw() {
                 ctx.font = `${this.size}px 'JetBrains Mono', monospace`;
-                ctx.fillStyle = `rgba(148, 163, 184, ${this.opacity})`; // slate-400 with opacity
+                ctx.fillStyle = `rgba(15, 23, 42, ${this.opacity})`; // slate-900 with opacity
                 ctx.fillText(this.text, this.x, this.y);
             }
         }
@@ -103,9 +104,9 @@ const PhysicsParticles = () => {
                 pointerEvents: 'none',
                 // Combined background: Radial gradients for "glow" + theme dark color
                 background: `
-                    radial-gradient(circle at 15% 50%, rgba(112, 0, 255, 0.05) 0%, transparent 25%),
-                    radial-gradient(circle at 85% 30%, rgba(0, 242, 255, 0.05) 0%, transparent 25%),
-                    var(--bg-dark)
+                    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.03) 0%, transparent 25%),
+                    radial-gradient(circle at 85% 30%, rgba(14, 165, 233, 0.03) 0%, transparent 25%),
+                    var(--bg-light)
                 `
             }}
         />

@@ -14,10 +14,12 @@ const Biodata = () => {
                 >
                     Individual <span className="text-gradient">Profile</span>
                 </motion.h1>
-                <p className="mono" style={{ color: 'var(--text-dim)' }}>ID_UID: {cvConfig.profile.id} | SUBJECT: {cvConfig.profile.name.toUpperCase().replace(' ', '_')}</p>
+                <p className="mono" style={{ color: 'var(--text-dim)' }}>
+                    ID_UID: {cvConfig.profile.id} | SUBJECT: {cvConfig.profile.name.toUpperCase().replace(' ', '_')} | PROJECTS_SYNC: {cvConfig.projects.length < 10 ? `0${cvConfig.projects.length}` : cvConfig.projects.length}
+                </p>
             </section>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '60px' }}>
+            <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '60px' }}>
                 {/* Left: Bio & Skills */}
                 <aside>
                     <div className="glass-card" style={{ padding: '40px', marginBottom: '40px' }}>
@@ -45,7 +47,7 @@ const Biodata = () => {
                                     borderRadius: '8px'
                                 }}
                             >
-                                <Download size={16} /> DOWNLOAD_FULL_CV.pdf
+                                <Download size={16} /> Download CV
                             </a>
                         </div>
 
@@ -57,12 +59,12 @@ const Biodata = () => {
                                         <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>{skill.name}</span>
                                         <span className="mono" style={{ fontSize: '0.8rem', color: 'var(--primary)' }}>{skill.level}%</span>
                                     </div>
-                                    <div style={{ height: '4px', background: 'rgba(255,255,255,0.05)', borderRadius: '10px', overflow: 'hidden' }}>
+                                    <div style={{ height: '6px', background: 'rgba(0,0,0,0.05)', borderRadius: '10px', overflow: 'hidden' }}>
                                         <motion.div
                                             initial={{ width: 0 }}
                                             whileInView={{ width: `${skill.level}%` }}
                                             transition={{ duration: 1.5, delay: i * 0.1 }}
-                                            style={{ height: '100%', background: 'var(--primary)', boxShadow: '0 0 10px var(--primary)' }}
+                                            style={{ height: '100%', background: 'var(--primary)', boxShadow: '0 4px 10px rgba(14, 165, 233, 0.2)' }}
                                         />
                                     </div>
                                 </div>
@@ -114,17 +116,18 @@ const Biodata = () => {
                                     width: '12px',
                                     height: '12px',
                                     borderRadius: '50%',
-                                    background: 'var(--bg-dark)',
+                                    background: 'white',
                                     border: '2px solid var(--primary)',
-                                    boxShadow: '0 0 10px var(--primary)'
+                                    boxShadow: '0 4px 10px rgba(14, 165, 233, 0.3)'
                                 }}></div>
 
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
                                     <div>
+                                        <div className="mono" style={{ color: 'var(--primary)', fontSize: '0.65rem', marginBottom: '4px' }}>FIELD: {exp.field?.toUpperCase() || 'GENERAL'}</div>
                                         <h4 style={{ fontSize: '1.2rem', fontWeight: 700 }}>{exp.role}</h4>
                                         <div style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>{exp.company}</div>
                                     </div>
-                                    <div className="mono" style={{ fontSize: '0.75rem', padding: '4px 12px', background: 'rgba(0,242,255,0.1)', borderRadius: '20px', color: 'var(--primary)' }}>
+                                    <div className="mono" style={{ fontSize: '0.75rem', padding: '4px 12px', background: 'rgba(14, 165, 233, 0.1)', borderRadius: '20px', color: 'var(--primary)' }}>
                                         {exp.year}
                                     </div>
                                 </div>

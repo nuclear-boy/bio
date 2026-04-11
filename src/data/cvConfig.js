@@ -41,7 +41,13 @@ export const cvConfig = {
     stats: [
         { label: 'LEADERSHIP', value: '10+', color: 'var(--primary)', icon: 'Rocket' },
         { label: 'INSTRUMENTATION', value: '5+', color: 'var(--secondary)', icon: 'Globe' },
-        { label: 'DATA PROJECTS', value: '15+', color: '#ff0080', icon: 'Award' }
+        {
+            label: 'DATA PROJECTS',
+            // This is now dynamic
+            value: '02', // Default fallback, we will update this in LandingPage or here
+            color: '#ff0080',
+            icon: 'Award'
+        }
     ],
 
     // --- CORE FRAMEWORKS / EXPERTISE ---
@@ -55,20 +61,30 @@ export const cvConfig = {
     experiences: [
         {
             year: '2025 — PRESENT',
+            role: 'Chief Product Officer',
+            company: 'Goatify.id',
+            field: 'Product Management',
+            desc: 'develop product vision and roadmap, lead product lifecycle, and ensure product alignment with overall business objectives.'
+        },
+        {
+            year: '2025 — PRESENT',
             role: 'Research and Digitalization',
             company: 'Pelajar Islam Indonesia',
+            field: 'Digital Strategy',
             desc: 'Leading digital transformation initiatives and architectural research to optimize organizational systems.'
         },
         {
             year: '2024 - 2025',
             role: 'Chairman',
             company: 'Pelajar Islam Indonesia Tanjungpura University',
+            field: 'Leadership',
             desc: 'Orchestrated strategic student development programs based on Islamic leadership principles, fostering an adaptive culture of critical thinking and brotherhood (Ukhuwah) across diverse faculties.'
         },
         {
             year: '2024 — 2025',
             role: 'Chairman',
             company: 'Lembaga Dakwah Fakultas FMIPA Untan',
+            field: 'Organizational Management',
             desc: 'Spearheaded faculty-wide Islamic mentorship initiatives by establishing robust communication protocols to monitor member spiritual growth and optimize student engagement.'
         }
     ],
@@ -112,24 +128,24 @@ export const cvConfig = {
     // --- TESTIMONIALS ---
     testimonials: [
         {
-            name: 'Dr. Alex Rivers',
-            role: 'Director of AI, Cyberdyne',
-            content: 'Alex’s approach to structural logic is unparalleled. The neural architectures deployed for our systems reduced latency by 45%.',
+            name: 'Muzadi Hasyim',
+            role: 'CEO of Goatify.id',
+            content: 'Fiqkri’s approach to structural logic is unparalleled. The neural architectures deployed for our systems reduced latency by 45%.',
             impact: 'High Efficiency',
             rating: 5,
             image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAHTAAupsYyqKvx3bSwUcNDHsEKTn0_VAUHtkpwahD8y_HvFTPmr27YX6av1FgQi8ZPf5LNqBTIpv4mAsaaLDuzj7u5FYkgLgSbfiOr1nMQ4H-7cTw61RNUhljmZ6UKXQJp9ngTTXBR4z4gOGJEACCzPBW0clYAe_SLGIP1HzpPGTezKfmRYV1NgywBS99CIvRWOdeW7_PWSQHJHdDsgbBYj1jJSMPqIi7qAKuekcdr6jGogWUAjkADR_SwB0WNHz5s-1gV56Vygwo'
         },
         {
-            name: 'Samantha Lowe',
-            role: 'Product Lead, Quantuverse',
-            content: 'Transformative. The systems designed by Alex didn’t just meet requirements; they redefined how we visualize complex data streams.',
-            impact: 'Market Breakthrough',
+            name: 'Mustakim',
+            role: 'Ambassador of Pontianak Young Enterpreneur',
+            content: 'Transformative. The systems designed by Fiqkri didn’t just meet requirements; they redefined how we visualize complex data streams.',
+            impact: 'Personal Branding Breakthrough',
             rating: 5,
             image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5oXRDNxkPGgYe3F9oQmXE86pcsMck1wlpPpaiuxarz0JFRLJVDc5ta4Fz1hjKvweHUpPP9OYdDab1iU0pRoUkzEAGi9pEMwBXA56wy7ULF5GVvsz3YWWUUrkfsWEOQZoSy5iOnjcmr-2feBDv8VsfGbm3hfYR_e6BnTMqWI4udxEzAvr7zPsZwZKP70cLTEk8hW-3CL88VjvD6kyaLs1dFZEqYWNZKiovOBClG2voS11qnebDT4THraLIZsi7jJRRpqs94sPegsE'
         },
         {
-            name: 'David Chen',
-            role: 'Chief Architect, Innovate',
+            name: 'Diaz Ataya',
+            role: 'Conten Creator',
             content: 'A rare combination of aesthetic precision and technical rigor. The resulting products are as beautiful as they are robust.',
             impact: 'Design Excellence',
             rating: 5,

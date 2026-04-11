@@ -30,10 +30,10 @@ const Portfolio = () => {
                         className="mono"
                         style={{
                             padding: '10px 20px',
-                            background: filter === cat ? 'var(--primary)' : 'rgba(255,255,255,0.03)',
+                            background: filter === cat ? 'var(--primary)' : 'rgba(0,0,0,0.03)',
                             border: '1px solid var(--border)',
                             borderRadius: '8px',
-                            color: filter === cat ? '#000' : 'var(--text-main)',
+                            color: filter === cat ? 'white' : 'var(--text-main)',
                             fontSize: '0.75rem',
                             cursor: 'pointer',
                             transition: 'all 0.3s ease'
@@ -47,7 +47,7 @@ const Portfolio = () => {
             {/* Grid */}
             <motion.div
                 layout
-                style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '30px' }}
+                style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 350px), 1fr))', gap: '30px' }}
             >
                 <AnimatePresence>
                     {filteredProjects.map((project, i) => (
@@ -89,7 +89,7 @@ const Portfolio = () => {
 
                                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '24px' }}>
                                     {project.tech.map(t => (
-                                        <span key={t} className="mono" style={{ fontSize: '0.65rem', padding: '4px 10px', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', border: '1px solid var(--border)' }}>
+                                        <span key={t} className="mono" style={{ fontSize: '0.65rem', padding: '4px 10px', background: 'rgba(0,0,0,0.03)', borderRadius: '4px', border: '1px solid var(--border)' }}>
                                             {t}
                                         </span>
                                     ))}
