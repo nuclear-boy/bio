@@ -140,7 +140,7 @@ export const cvConfig = {
             role: 'Ambassador of Pontianak Young Enterpreneur',
             content: 'Transformative. The systems designed by Fiqkri didn’t just meet requirements; they redefined how we visualize complex data streams.',
             impact: 'Personal Branding Breakthrough',
-            rating: 5,
+            rating: 4,
             image: ''
         },
         {
