@@ -148,7 +148,7 @@ export const cvConfig = {
             role: 'Conten Creator',
             content: 'A rare combination of aesthetic precision and technical rigor. The resulting products are as beautiful as they are robust.',
             impact: 'Design Excellence',
-            rating: 5,
+            rating: 4,
             image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAH6tHnO-mDSskBh4IIX_tLx4cO0B_GGySWjeIG9NtZ_2Slj6EI91oEONbjlIIaA8RLm2DQly5FLIGxzxDbVioqkkjAdKgUZkYZ0kO5G4V83M3nIlkctkG6TdO2_yk80kgtuhVcGBfqIPS2ZNc8JYTv-OIexxNbkB4F3ZNYf8-QLGUR7G-YvSjknCfl0uJfAfIpZ_rIaV8CxvVX4tArxeDeQxbNixILHl1utbEhc-koZ6dSsgPENoIKOYRrAuLfCwYkgX-rmHxsKQE'
         }
     ],
